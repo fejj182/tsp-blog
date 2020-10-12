@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-app-bar v-show="logoLoaded" id="header" app color="primary" dark>
+    <v-app-bar v-show="true" id="header" app color="primary" dark>
       <a href="/">
         <img
           id="logo"
