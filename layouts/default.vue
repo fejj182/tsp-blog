@@ -4,7 +4,7 @@
       <a href="/">
         <img
           id="logo"
-          src="~/assets/Logo-1.png"
+          src="../assets/Logo-1.png"
           alt="trainspotter-logo"
           @load="onLogoLoad"
         >
