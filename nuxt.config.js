@@ -67,11 +67,12 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    publicPath: '/tspblog/_nuxt/',
     extend (config, { isDev }) {
-      if (isDev) {
-        return
-      }
-      config.output.publicPath = '/tspblog/_nuxt/'
+      // if (isDev) {
+      //   return
+      // }
+      // config.output.publicPath = '/tspblog/_nuxt/'
     }
   }
 }
