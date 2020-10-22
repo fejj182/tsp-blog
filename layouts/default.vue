@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app id="app" dark>
     <v-app-bar v-show="true" id="header" app color="primary" dark>
       <a href="/">
         <img
@@ -41,6 +41,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#app * {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
 #header {
   a {
     display: inline-block;
@@ -60,6 +65,11 @@ span {
 @media only screen and (max-width: 600px) {
   #logo {
     width: 95%;
+  }
+
+  #app .v-application--wrap {
+    min-height: calc(100vh);
+    min-height: calc(var(--vh, 1vh) * 100);
   }
 }
 </style>
