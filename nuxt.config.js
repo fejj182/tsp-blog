@@ -80,7 +80,6 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    publicPath: '/tspblog/_nuxt/',
     extend (config, { isDev }) {
       if (isDev) {
         return
