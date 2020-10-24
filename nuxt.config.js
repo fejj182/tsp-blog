@@ -83,5 +83,12 @@ export default {
 
   router: {
     base: '/tspblog/'
+  },
+
+  generate: {
+    routes: [
+      '/tspblog/lisa-bonetti-travel-sustainably',
+      '/lisa-bonetti-travel-sustainably'
+    ]
   }
 }
