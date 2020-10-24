@@ -87,8 +87,8 @@ export default {
 
   generate: {
     routes: [
-      '/tspblog/lisa-bonetti-travel-sustainably',
-      '/lisa-bonetti-travel-sustainably'
+      '/lisa-bonetti-travel-sustainably',
+      '/sean-daggers-average-tourist'
     ]
   }
 }
