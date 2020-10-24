@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     linkUrl (slug) {
-      return '/blog/' + slug
+      return process.env.NUXT_ENV_BASE_URL + slug
     },
     storyAuthor (storyName) {
       return storyName.split(' - ')[0]

@@ -64,8 +64,8 @@ export default {
     font-size: 20px;
   }
   .v-card {
-    width: 40%;
-    margin: 4rem auto 2rem;
+    width: 32.5%;
+    margin: 3rem auto 1rem;
   }
 }
 
@@ -76,7 +76,7 @@ export default {
       font-size: 18px;
     }
     .v-card {
-      width: 65%;
+      width: 50%;
       margin: 2rem auto 0;
     }
   }

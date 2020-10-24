@@ -1,6 +1,6 @@
 <template>
-  <v-app id="app" dark>
-    <v-app-bar v-show="true" id="header" app color="primary" dark>
+  <v-app id="app">
+    <v-app-bar v-show="true" id="header" app color="primary">
       <a href="/">
         <img
           id="logo"
@@ -65,11 +65,6 @@ span {
 @media only screen and (max-width: 600px) {
   #logo {
     width: 95%;
-  }
-
-  #app .v-application--wrap {
-    min-height: calc(100vh);
-    min-height: calc(var(--vh, 1vh) * 100);
   }
 }
 </style>

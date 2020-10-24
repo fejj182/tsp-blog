@@ -143,10 +143,10 @@ export default {
   #blog-header {
     .blog-post-header__content {
       .blog-post-header__text {
-        margin-top: -30%;
+        margin-top: -10vh;
         padding: 0.5rem;
         h1 {
-          font-size: 28px;
+          font-size: 32px;
           font-weight: 600;
         }
         h2,

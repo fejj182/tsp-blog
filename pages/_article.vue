@@ -9,7 +9,8 @@
 export default {
   asyncData (context) {
     // Load the JSON from the API
-    return context.app.$storyapi.get('cdn/stories/home', {
+    const article = context.app.context.params.article
+    return context.app.$storyapi.get('cdn/stories/' + article, {
       version: 'draft'
     }).then((res) => {
       return res.data
@@ -40,11 +41,8 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  background-color: black;
-}
-
 .container {
+  max-width: 100%;
   padding: 0;
 }
 </style>
