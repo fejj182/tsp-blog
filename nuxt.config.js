@@ -80,11 +80,15 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    extend (config, { isDev }) {
-      if (isDev) {
-        return
-      }
-      config.output.publicPath = '/tspblog/_nuxt/'
-    }
+    // extend (config, { isDev }) {
+    //   if (isDev) {
+    //     return
+    //   }
+    //   config.output.publicPath = '/tspblog/_nuxt/'
+    // }
+  },
+
+  router: {
+    base: '/tspblog/'
   }
 }
