@@ -83,7 +83,7 @@ export default {
   build: {},
 
   router: {
-    base: '/tspblog/'
+    base: process.env.NUXT_ENV_BASE_URL
   },
 
   generate: {
