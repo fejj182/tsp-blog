@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+import axios from 'axios'
 require('dotenv').config()
 
 export default {
@@ -86,9 +87,13 @@ export default {
   },
 
   generate: {
-    routes: [
-      '/lisa-bonetti-travel-sustainably',
-      '/sean-daggers-average-tourist'
-    ]
+    routes: () => {
+      return axios.get('https://api.storyblok.com/v1/cdn/stories?token=' + process.env.NUXT_ENV_STORYBLOK_TOKEN)
+        .then((res) => {
+          return res.data.stories.map((story) => {
+            return '/' + story.slug
+          })
+        })
+    }
   }
 }
