@@ -1,6 +1,11 @@
 <template>
   <div v-editable="blok" class="page">
-    <component :is="component.component" v-for="component in blok.body" :key="component._uid" :blok="component" />
+    <component
+      :is="component.component"
+      v-for="component in blok.body"
+      :key="component._uid"
+      :blok="component"
+    />
   </div>
 </template>
 
