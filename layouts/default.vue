@@ -27,11 +27,6 @@ export default {
       logoLoaded: false
     }
   },
-  computed: {
-    isMobile () {
-      return window.innerWidth < 600
-    }
-  },
   methods: {
     onLogoLoad () {
       this.logoLoaded = true
@@ -48,8 +43,7 @@ export default {
 
 #header {
   a {
-    display: inline-block;
-    max-width: 66.67%;
+    display: block;
   }
 }
 
@@ -59,12 +53,13 @@ span {
 
 #logo {
   margin-top: 0.5rem;
-  width: 70%;
+  width: auto;
+  max-height: 64px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   #logo {
-    width: 95%;
+    max-height: 56px;
   }
 }
 </style>
