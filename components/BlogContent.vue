@@ -17,7 +17,6 @@
 </template>
 
 <script>
-import { getImageMetaData } from '../utils/image'
 
 export default {
   props: {
@@ -29,19 +28,6 @@ export default {
   data () {
     return {
       paragraphs: []
-    }
-  },
-  computed: {
-    blogPostHeaderStyle () {
-      if (this.blok.image) {
-        const { url } = getImageMetaData(this.blok.image)
-
-        return {
-          'background-image': `url(https:${url})`
-        }
-      }
-
-      return {}
     }
   },
   created () {
