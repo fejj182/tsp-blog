@@ -8,8 +8,10 @@
       <p v-for="(paragraph, index) in paragraphs" :key="index">
         {{ paragraph }}
       </p>
-
-      <v-card v-if="blok.graphic">
+      <v-card v-if="blok.graphic.filename">
+        <v-img :src="blok.graphic.filename" :alt="blok.graphic.alt" contain />
+      </v-card>
+      <v-card v-else>
         <v-img :src="blok.graphic" contain />
       </v-card>
     </div>
