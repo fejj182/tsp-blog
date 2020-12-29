@@ -8,8 +8,8 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - trainspotter-blog',
-    title: 'trainspotter-blog',
+    titleTemplate: '%s - Sustainability Blog',
+    title: 'Sustainability Blog',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
