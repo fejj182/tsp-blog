@@ -8,16 +8,14 @@
       <p v-for="(paragraph, index) in paragraphs" :key="index">
         {{ paragraph }}
       </p>
-
-      <v-card v-if="blok.graphic">
-        <v-img :src="blok.graphic" contain />
+      <v-card v-if="blok.graphic.filename">
+        <v-img :src="blok.graphic.filename" :alt="blok.graphic.alt" contain />
       </v-card>
     </div>
   </div>
 </template>
 
 <script>
-import { getImageMetaData } from '../utils/image'
 
 export default {
   props: {
@@ -29,19 +27,6 @@ export default {
   data () {
     return {
       paragraphs: []
-    }
-  },
-  computed: {
-    blogPostHeaderStyle () {
-      if (this.blok.image) {
-        const { url } = getImageMetaData(this.blok.image)
-
-        return {
-          'background-image': `url(https:${url})`
-        }
-      }
-
-      return {}
     }
   },
   created () {

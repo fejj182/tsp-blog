@@ -14,9 +14,10 @@ export default async () => {
     // Target (https://go.nuxtjs.dev/config-target)
     target: 'static',
     // Global page headers (https://go.nuxtjs.dev/config-head)
+
     head: {
-      titleTemplate: '%s - trainspotter-blog',
-      title: 'trainspotter-blog',
+      titleTemplate: '%s',
+      title: 'Sustainability Blog',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },

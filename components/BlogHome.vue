@@ -4,6 +4,8 @@
       v-editable="blok"
       class="blog-post-header__content"
       :style="blogPostHeaderStyle"
+      role="img"
+      :aria-label="blok.image.alt"
     >
       <h1>
         {{ blok.title }}
@@ -36,7 +38,7 @@ export default {
   computed: {
     blogPostHeaderStyle () {
       if (this.blok.image) {
-        const { url } = getImageMetaData(this.blok.image)
+        const { url } = getImageMetaData(this.blok.image.filename)
 
         return {
           'background-image': `url(https:${url})`
